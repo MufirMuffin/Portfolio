@@ -13,265 +13,181 @@
   <meta name="author" content="" />
 
   <title>Mufir's Portfolio</title>
+  <link rel="icon" href="images/MF-logo.png" type="image/icon type">
 
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
-
-
   <!-- font wesome stylesheet -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
   <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+  <!-- bootstrap icon -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" rel="stylesheet">
 
   <style>
-    /* Add this style for the fixed-top class */
     .fixed-top {
       position: fixed;
       width: 100%;
       top: 0;
       z-index: 1000;
-      background-color: #000000; /* Add your desired background color */
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a box shadow for a subtle effect */
-    }
-
-    body {
-      padding-top: 0px; /* Adjust this value to match your header height */
-    }
-
-    .detail-box img {
-      max-width: 100%; /* Set the maximum width to 100% of the container */
-      height: auto;    /* Allow the height to adjust proportionally */
-    }
-
-    /* Add these styles for another project card style */
-    .project-box {
-      position: relative;
-      overflow: hidden;
-      margin-bottom: 10px;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      transition: box-shadow 0.3s ease-in-out;
-      padding: 12px;
-    }
-
-    .project-box:hover {
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    }
-
-    .project-img {
-      overflow: hidden;
-      border-radius: 8px 8px 0 0;
-    }
-
-    .project-img img {
-      width: 30%;
-      height: auto;
-      transition: transform 0.3s ease-in-out;
-    }
-
-    .project-details {
-      padding: 10px;
-    }
-
-    .project-details h4 {
-      font-size: 16px;
-      margin-bottom: 6px;
-    }
-
-    .project-details p {
-      font-size: 12px;
-      color: #888;
+      background-color: #000000;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease;
     }
   </style>
 </head>
 
 <body>
-  <div id="home" class="hero_area">
-    <!-- header section strats -->
-    <header class="header_section fixed-top">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
-          <a class="navbar-brand mr-5" href="index.html">
-            <img src="images/logo.png" alt="">
-            <span>
-              Mufir's Portfolio
-            </span>
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
-              <ul class="navbar-nav  ">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#about"> About </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#experiences"> Experiences </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contact">Contact us</a>
-                </li>
-              </ul>
- 
-            </div>
+
+  <!-- header section strats -->
+  <header class="header_section fixed-top">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+        <a class="navbar-brand mr-5" href="index.html">
+          <img src="images/MF-logo.png" alt="">
+          <span>
+            Mufir's Portfolio
+          </span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+            <ul class="navbar-nav  ">
+              <li class="nav-item active">
+                <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about"> About </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#experiences"> Experiences </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects"> Projects </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact"> Contact me </a>
+              </li>
+            </ul>
+
           </div>
-        </nav>
-      </div>
-    </header>
-    <!-- end header section -->
-    <!-- slider section -->
-    <section class=" slider_section position-relative">
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="detail-box">
-                    <div class="row">
-                      <div class="col-md-8">
-                        <h1>
-                          Hello! I am <br>
-                          <span>
-                            Muhammad Firdaus Fauzi
-                          </span>
-                        </h1>
-                        <p>
-                          I am a recent graduate from UiTM, specializing in Information System Engineering.
-                          During my academic journey, I gained valuable knowledge in areas such as software development,
-                          database management, and system testing. I am passionate about leveraging technology to solve
-                          real-world problems and am eager to apply my skills in a professional setting.
-                        </p>
-                        <div class="btn-box">
-                          <a href="https://www.linkedin.com/in/mfirdausfauzi/" class="btn-1">
-                            LinkedIn
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16" style="padding-bottom: 1px;">
-                              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
-                            </svg>
-                          </a>
-                        </div>                  
-                      </div>
-                      <div class="col-md-4">
-                        <!-- Add your photo here -->
-                        <img src="images\Me.png" alt="Muhammad Firdaus Fauzi">
-                      </div>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- <div class="carousel-item">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-7">
-                  <div class="detail-box">
-                    <div>
-                      <h1>
-                        Welcome To <br>
-                        <span>
-                          Content Writing Services
-                        </span>
-                      </h1>
-                      <p>
-                        It is a long established fact that a reader will be distracted by the readable content of a page
-                        when looking
-                      </p>
-                      <div class="btn-box">
-                        <a href="" class="btn-1">
-                          Contact Us
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> -->
         </div>
-        <!-- <div class="custom_carousel-control">
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="sr-only">Next</span>
-          </a>
-        </div> -->
+      </nav>
+    </div>
+  </header>
+  <!-- end header section -->
+  <div class="body_bg ">
+    <div id="home" class="hero_area" style="height: 100vh;">
+      <!-- slider section -->
+      <section class=" slider_section position-relative">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="detail-box">
+                      <div class="row">
+                        <div class="col-md-8">
+                          <h1>
+                            Hello! I am <br>
+                            <span>
+                              Muhammad Firdaus Fauzi
+                            </span>
+                          </h1>
+                          <p>
+                            I am a recent graduate from UiTM, specializing in Information System Engineering.
+                            During my academic journey, I gained valuable knowledge in areas such as software
+                            development,
+                            database management, and system testing. I am passionate about leveraging technology to
+                            solve
+                            real-world problems and am eager to apply my skills in a professional setting.
+                          </p>
+                          <div class="btn-box">
+                            <a href="https://www.linkedin.com/in/mfirdausfauzi/" class="btn-1">
+                              LinkedIn
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                class="bi bi-linkedin" viewBox="0 0 16 16" style="padding-bottom: 1px;">
+                                <path
+                                  d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="animated-img">
+                            <img src="images/me-suit.png" alt="Muhammad Firdaus Fauzi">
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- about section -->
+    <section id="about" class="about_section layout_padding2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="detail-box">
+              <div class="heading_container">
+                <h2>About Me</h2>
+              </div>
+              <p>
+                Hi there! I'm Muhammad Firdaus Fauzi, but you can call me Mufir. I recently graduated from UiTM with a
+                specialization in Information System Engineering. During my academic journey, I delved into the world of
+                software development, database management, and system testing. My passion lies in leveraging technology
+                to
+                solve real-world problems, and I'm excited to apply my skills in a professional setting.
+              </p>
+              <p>
+                What fuels my enthusiasm is the constant evolution of technology and its potential to create meaningful
+                impact. I'm not just a developer; I'm a problem solver who thrives on challenges. Whether it's coding
+                elegant solutions or collaborating with a team, I bring dedication and creativity to the table.
+              </p>
+              <p>
+                Let's connect and explore how we can innovate together!
+              </p>
+              <a href="">
+                Get to Know Me
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="img-box">
+              <img src="images/about-img.png" alt="">
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <!-- end slider section -->
-  </div>
-
-  <!-- about section -->
-
-  <section id="about" class="about_section layout_padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="detail-box">
-            <div class="heading_container">
-              <h2>
-                About Me
-              </h2>
-            </div>
-            <p>
-              Hi there! I'm Muhammad Firdaus Fauzi, but you can call me Mufir. I recently graduated from UiTM with a
-              specialization in Information System Engineering. During my academic journey, I delved into the world of
-              software development, database management, and system testing. My passion lies in leveraging technology to
-              solve real-world problems, and I'm excited to apply my skills in a professional setting.
-            </p>
-            <p>
-              What fuels my enthusiasm is the constant evolution of technology and its potential to create meaningful
-              impact. I'm not just a developer; I'm a problem solver who thrives on challenges. Whether it's coding
-              elegant solutions or collaborating with a team, I bring dedication and creativity to the table.
-            </p>
-            <p>
-              Let's connect and explore how we can innovate together!
-            </p>
-            <a href="">
-              Get to Know Me
-            </a>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="img-box">
-            <img src="images/about-img.png" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- end about section -->
-  <div class="body_bg layout_padding">
+    <!-- end about section -->
 
     <!-- experiences section -->
+    <section id="experiences" class="service_section layout_padding ">
 
-    <section id="experiences" class="service_section ">
-      <div class="container">
-        <div class="heading_container">
-          <h2>
-            Experiences
-          </h2>
-        </div>
+      <div class="heading_container">
+        <h2>
+          Experiences
+        </h2>
       </div>
+
       <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -280,16 +196,18 @@
                 <img src="images/s-3.png" alt="">
               </div>
               <h4>
-                Software Developer Internship 
+                Software Developer Internship
               </h4>
-              <h5>at Cloud Connect Sdn. Bhd.</h5>
+              <h6>at <em>Cloud Connect Sdn. Bhd.</em></h6>
               <p>
-                Collaborated with the IT team on implementing effective maintenance procedures for the MinDef mobile app. Developed a
-                web application using NuxtJS, MySQL, and RESTful APIs. Integrated Docker for containerization and applied Agile
+                Collaborated with the IT team on implementing effective maintenance procedures for the MinDef mobile
+                app. Developed a
+                web application using NuxtJS, MySQL, and RESTful APIs. Integrated Docker for containerization and
+                applied Agile
                 Methodology. Worked with GitLab for version control.
               </p>
               <p>
-                Duration: Sep 2023 - Feb 2024
+                <strong>Duration:</strong> Sep 2023 - Feb 2024
               </p>
               <a href="">
                 Read More
@@ -302,18 +220,18 @@
                 <img src="images/s-2.png" alt="">
               </div>
               <h4>
-                Part-time Store Assistant 
+                Part-time Store Assistant
               </h4>
-              <h5>
-                at 7-Eleven Malaysia Sdn. Bhd.
-              </h5>
+              <h6>at <em>at 7-Eleven Malaysia Sdn. Bhd.</em></h6>
               <p>
-                Efficiently organized and updated stock through regular stock checks, ensuring accurate product counts and optimal
-                inventory levels. Managed damaged stock and maintained a clean store environment. Proactively handled customer inquiries
+                Efficiently organized and updated stock through regular stock checks, ensuring accurate product counts
+                and optimal
+                inventory levels. Managed damaged stock and maintained a clean store environment. Proactively handled
+                customer inquiries
                 and requests.
               </p>
               <p>
-                Duration: Aug 2015 - Aug 2019
+                <strong>Duration:</strong> Aug 2015 - Aug 2019
               </p>
               <a href="">
                 Read More
@@ -321,353 +239,180 @@
             </div>
           </div>
         </div>
-        <!-- <div class="row">
-          <div class="col-md-6">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/s-3.png" alt="">
-              </div>
-              <h4>
-                Up to Date
-              </h4>
-              <p>
-                It is a long established fact that a reader will be distracted by the readable content of a page when
-                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
-                of
-                letters, as opposed to using 'Content here, content here', making it look like now use Lorem Ipsum as
-                their default model text,
-              </p>
-              <a href="">
-                Read More
-              </a>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="box align-items-end align-items-md-start text-right text-md-left">
-              <div class="img-box">
-                <img src="images/s-4.png" alt="">
-              </div>
-              <h4>
-                Premium Content
-              </h4>
-              <p>
-                It is a long established fact that a reader will be distracted by the readable content of a page when
-                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
-                of
-                letters, as opposed to using 'Content here, content here', making it look like
-              </p>
-              <a href="">
-                Read More
-              </a>
-            </div>
-          </div>
-        </div> -->
       </div>
     </section>
 
-    <!-- end service section -->
-
-    <!-- quote section -->
-
-    <section id="quote" class="quote_section layout_padding">
-      <div class="container">
-        <div class="box">
-          <div class="detail-box">
-            <h3>
-              Get Your Quote Today!
-            </h3>
-            <p>
-              It is a long established fact that a reader will be distracted by the readable content of a page
-            </p>
-          </div>
-          <div class="btn-box">
-            <a href="">
-              Get A Quote
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- end quote section -->
-
-
-    <!-- contact section -->
-
-    <section id="contact" class="contact_section">
+    <!-- projects section -->
+    <section id="projects" class="projects_section layout_padding">
       <div class="container">
         <div class="heading_container">
           <h2>
-            Let's Get In Touch!
+            My Projects
           </h2>
         </div>
       </div>
-      <div class="container contact_bg layout_padding2-top">
+      <div class="container">
+        <div class="row">
+          <!-- Project 1 -->
+          <div class="col-md-4">
+            <div class="project-box" data-toggle="modal" data-target="#projectModal1">
+              <div class="project-img">
+                <img src="images/ourapp-icon3.png" alt="Project 1">
+              </div>
+              <div class="project-details">
+                <h4>OurApp - Restricted Messaging App</h4>
+                <p>Internship</p>
+              </div>
+            </div>
+            <!-- Modal for Project 1 -->
+            <div class="modal fade" id="projectModal1" tabindex="-1" role="dialog" aria-labelledby="projectModal1Label"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="projectModal1Label">OurApp - Restricted Messaging App Details
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p>OurApp is a restricted messaging application developed for the Ministry of Defence (MinDef). It
+                      provides secure communication channels for MinDef personnel to exchange sensitive information.</p>
+                    <p><strong>Technologies Used:</strong> Android Studio IDE, Kotlin, XML, Gradle, Github</p>
+                    <p><strong>Features:</strong></p>
+                    <ul>
+                      <li>End-to-end encryption for secure messaging</li>
+                      <li>User authentication and access control</li>
+                      <li>Message archiving and retrieval</li>
+                    </ul>
+                    <p><strong>My Contribution:</strong> As part of the development team and an intern, I contributed to
+                      the
+                      frontend development, updated the application align user requirements.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <!-- Add any additional buttons or actions here -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div class="col-md-4">
+            <div class="project-box" data-toggle="modal" data-target="#projectModal2">
+              <div class="project-img">
+                <img src="images/travelwell-icon3.png" alt="Project 2">
+              </div>
+              <div class="project-details">
+                <h4>TravelWell - Malacca Tourism App</h4>
+                <p>Final Year Project (FYP)</p>
+              </div>
+            </div>
+            <!-- Modal for Project 2 -->
+            <div class="modal fade" id="projectModal2" tabindex="-1" role="dialog" aria-labelledby="projectModal2Label"
+              aria-hidden="true">
+              <!-- Add your modal content here -->
+            </div>
+          </div>
+          <!-- Add more project boxes as needed -->
+          <!-- Project 3 -->
+          <div class="col-md-4">
+            <div class="project-box" data-toggle="modal" data-target="#projectModal3">
+              <div class="project-img">
+                <img src="images/mymasjid-logo.png" alt="Project 3">
+              </div>
+              <div class="project-details">
+                <h4>MyMasjid - Event Management System</h4>
+                <p>University Assignment</p>
+              </div>
+            </div>
+            <!-- Modal for Project 3 -->
+            <div class="modal fade" id="projectModal3" tabindex="-1" role="dialog" aria-labelledby="projectModal3Label"
+              aria-hidden="true">
+              <!-- Add your modal content here -->
+              <p>
+                Develop an efficient administrative process for mosque management and ease the
+                community to get instant information about all mosque events.
+                Implement Java EE and MySQL, deployed the system on Heroku for efficient accessibility.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEW contact section -->
+    <section class="contact_section layout_padding2" id="contact">
+      <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <div class="contact_form">
-              <div class="contact_info">
-                <div class="info_item">
-                  <img src="images/email-icon.png" alt="Email Icon">
-                  <p>Email: <a href="mailto:ffdausfauzi8@gmail.com">ffdausfauzi8@gmail.com</a></p>
-                </div>
-                <div class="info_item">
-                  <img src="images/email-icon.png" alt="Email Icon">
-                  <p>Tel: +6016-7488813</p>
-                </div>
-                <div class="info_item">
-                  <img src="images/linkedin-icon2.png" alt="LinkedIn Icon">
-                  <p>LinkedIn: <a href="https://www.linkedin.com/in/mfirdausfauzi/" target="_blank">mfirdausfauzi</a></p>
-                </div>
-                <div class="info_item">
-                  <img src="images/github-icon.png" alt="GitHub Icon">
-                  <p>GitHub: <a href="https://github.com/MufirMuffin" target="_blank">MufirMuffin</a></p>
-                </div>
-              </div>
+            <div class="contact-info">
+              <h2>Contact Information</h2>
+              <ul>
+                <li>
+                  <i class="bi bi-envelope-fill" style="color: #e93f1a;"></i>
+                  <a href="mailto:ffdausfauzi8@gmail.com">ffdausfauzi8@gmail.com</a>
+                </li>
+                <li>
+                  <i class="bi bi-telephone-fill" style="color: #e93f1a;"></i>
+                  <a href="tel:+60167488813">+6016-7488 813</a>
+                </li>
+                <li>
+                  <i class="bi bi-linkedin" style="color: #e93f1a;"></i>
+                  <a href="https://www.linkedin.com/in/mfirdausfauzi/">LinkedIn</a>
+                </li>
+                <li>
+                  <i class="bi bi-github" style="color: #e93f1a;"></i>
+                  <a href="https://github.com/MufirMuffin">GitHub</a>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="img-box">
-              <img src="images/contact-img.jpg" alt="Contact Image">
+          <div class="col-md-6 mx-auto">
+            <div class="form_container">
+              <div class="heading_container heading_center">
+                <h2>Get In Touch</h2>
+              </div>
+              <form action="">
+                <div class="form-row">
+                  <div class="form-group col">
+                    <input type="text" class="form-control" placeholder="Your Name" />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col">
+                    <input type="email" class="form-control" placeholder="Email" />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col">
+                    <input type="text" class="message-box form-control" placeholder="Message" />
+                  </div>
+                </div>
+                <div class="btn_box">
+                  <button>
+                    SEND
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
     </section>
-    
-
     <!-- end contact section -->
 
-    <!-- client section -->
-
-    <section id="client" class="client_section layout_padding-top">
-      <div class="d-flex justify-content-center">
-        <div class="heading_container">
-          <h2>
-            Testimonial
-          </h2>
-        </div>
-      </div>
-      <div class="container layout_padding2">
-        <div id="carouselExample2Indicators" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExample2Indicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExample2Indicators" data-slide-to="1"></li>
-            <li data-target="#carouselExample2Indicators" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item ">
-              <div class="client_container">
-                <div class="client-id">
-                  <div class="img-box">
-                    <img src="images/client.jpg" alt="">
-                  </div>
-                  <div class="client_name">
-                    <div>
-                      <h3>
-                        Johndue
-                      </h3>
-                      <p>
-                        Farm & CO
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="client_detail">
-                  <div class="client_text">
-                    <blockquote>
-                      <p>
-                        ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                      </p>
-                    </blockquote>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item active">
-              <div class="client_container">
-                <div class="client-id">
-                  <div class="img-box">
-                    <img src="images/client.jpg" alt="">
-                  </div>
-                  <div class="client_name">
-                    <div>
-                      <h3>
-                        Johndue
-                      </h3>
-                      <p>
-                        Farm & CO
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="client_detail">
-                  <div class="client_text">
-                    <blockquote>
-                      <p>
-                        ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                      </p>
-                    </blockquote>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item ">
-              <div class="client_container">
-                <div class="client-id">
-                  <div class="img-box">
-                    <img src="images/client.jpg" alt="">
-                  </div>
-                  <div class="client_name">
-                    <div>
-                      <h3>
-                        Johndue
-                      </h3>
-                      <p>
-                        Farm & CO
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="client_detail">
-                  <div class="client_text">
-                    <blockquote>
-                      <p>
-                        ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                      </p>
-                    </blockquote>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- end client section -->
   </div>
-
-<!-- projects section -->
-<section id="projects" class="projects_section layout_padding">
-  <div class="container">
-    <div class="heading_container">
-      <h2>
-        My Projects
-      </h2>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <!-- Project 1 -->
-      <div class="col-md-4">
-        <div class="project-box" data-toggle="modal" data-target="#projectModal1">
-          <div class="project-img">
-            <img src="images/ourapp-icon3.png" alt="Project 1">
-          </div>
-          <div class="project-details">
-            <h4>OurApp - Restricted Messaging App for MinDef</h4>
-            <p>Internship</p>
-          </div>
-        </div>
-        <!-- Modal for Project 1 -->
-        <div class="modal fade" id="projectModal1" tabindex="-1" role="dialog" aria-labelledby="projectModal1Label"
-          aria-hidden="true">
-          <!-- Add your modal content here -->
-        </div>
-      </div>
-      <!-- Project 2 -->
-      <div class="col-md-4">
-        <div class="project-box" data-toggle="modal" data-target="#projectModal2">
-          <div class="project-img">
-            <img src="images/travelwell-icon3.png" alt="Project 2">
-          </div>
-          <div class="project-details">
-            <h4>TravelWell - Malacca Tourism App</h4>
-            <p>Final Year Project (FYP)</p>
-          </div>
-        </div>
-        <!-- Modal for Project 2 -->
-        <div class="modal fade" id="projectModal2" tabindex="-1" role="dialog" aria-labelledby="projectModal2Label"
-          aria-hidden="true">
-          <!-- Add your modal content here -->
-        </div>
-      </div>
-      <!-- Add more project boxes as needed -->
-      <!-- Project 3 -->
-      <div class="col-md-4">
-        <div class="project-box" data-toggle="modal" data-target="#projectModal3">
-          <div class="project-img">
-            <img src="images/travelwell-icon3.png" alt="Project 3">
-          </div>
-          <div class="project-details">
-            <h4>MyMasjid - Event Management System</h4>
-            <p>UiTM Assignment</p>
-          </div>
-        </div>
-        <!-- Modal for Project 3 -->
-        <div class="modal fade" id="projectModal3" tabindex="-1" role="dialog" aria-labelledby="projectModal3Label"
-          aria-hidden="true">
-          <!-- Add your modal content here -->
-          <p>
-            Develop an efficient administrative process for mosque management and ease the
-            community to get instant information about all mosque events.
-            Implement Java EE and MySQL, deployed the system on Heroku for efficient accessibility.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-  <!-- info section -->
-
-  <section class="info_section layout_padding">
-    <div class="footer_contact">
-      <div class="heading_container">
-        <h2>
-          Contact Us
-        </h2>
-      </div>
-      <div class="box">
-        <a href="" class="img-box">
-          <img src="images/location.png" alt="" class="img-1">
-          <img src="images/location-o.png" alt="" class="img-2">
-        </a>
-        <a href="" class="img-box">
-          <img src="images/call.png" alt="" class="img-1">
-          <img src="images/call-o.png" alt="" class="img-2">
-        </a>
-        <a href="" class="img-box">
-          <img src="images/envelope.png" alt="" class="img-1">
-          <img src="images/envelope-o.png" alt="" class="img-2">
-        </a>
-      </div>
-    </div>
-
-
-  </section>
-
-
-  <!-- end info section -->
 
   <!-- footer section -->
   <section class="container-fluid footer_section">
     <p>
-      Copyright &copy; 2019 All Rights Reserved By
-      <a href="https://html.design/">Free Html Templates</a>
+      <a href="index.html">Made by Muhammad Firdaus Fauzi</a>
     </p>
   </section>
   <!-- footer section -->
+
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
